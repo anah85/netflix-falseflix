@@ -1,0 +1,50 @@
+.films{
+    @media (max-width: 600px) {
+        width: 100%;
+        height: 90vw;
+        padding-bottom: 0;
+        padding-left: 20px;
+    
+        color: var(--text-color);
+  
+      }
+    display: flex;
+    flex-direction: column;
+
+    &::-webkit-scrollbar {
+        visibility: hidden;
+      }
+    
+      &::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey;
+        border-radius: 10px;
+      }
+    
+      &::-webkit-scrollbar-thumb {
+        background:#710c0c;
+    
+        border-radius: 10px;
+      }
+}
+.films__ul{
+    @media (max-width: 600px) {
+        width: 100%;
+      }
+    display: flex;
+    
+}
+img {
+    @media (max-width: 600px) {
+      width: 380px;
+      height: 220px;
+    }
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    &:hover {
+      transform: scale(1.2);
+      cursor: pointer;
+    }
+}

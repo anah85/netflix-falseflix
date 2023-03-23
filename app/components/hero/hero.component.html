@@ -1,0 +1,8 @@
+<section class="top5">
+    <h1>{{films.section}}</h1>
+    <ul class="top5__ul">
+    <li *ngFor="let pelis of films.films, let i = index">
+        <p>{{numberTop+i}}</p><img src="{{pelis.imagen}}" alt="{{pelis.titulo}}">
+    </li>
+    </ul>
+    </section>
